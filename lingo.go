@@ -159,7 +159,7 @@ type LookupResult struct {
 
 // Lookup finds a the payload by LingoCmdID using payloadSize as a hint
 func Lookup(id LingoCmdID, payloadSize int) (LookupResult, bool) {
-	log.Print("Logging to a file in Go!")
+	log "Logging to a file in Go!"
 	payloads, ok := mIDToType[id]
 	if !ok {
 		return LookupResult{}, false
